@@ -3,7 +3,7 @@ var Path = require('path');
 var transfromStyleObj = require('./transformStyleObj'); 
 var transformToCss = require('./transformToCss');
 
-var styles = [];
+var transformCss = false;
 module.exports = function({types: t}){
 	var status = {
 		cache:{},
@@ -43,7 +43,7 @@ module.exports = function({types: t}){
 			},			
 			CallExpression(path, state){
 				const callee = path.node.callee, inputObjExpression = path.node.arguments[0];
-				if(t.isMemberExpression(callee) 
+				if(transformCss && t.isMemberExpression(callee) 
 					&& t.isIdentifier(callee.object, {name: 'StyleSheet'}) 
 					&& t.isIdentifier(callee.property, {name: 'create'})
 					&& t.isVariableDeclarator(path.parentPath.node)){//StyleSheet.create创建的样式表

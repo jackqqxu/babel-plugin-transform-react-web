@@ -1,0 +1,28 @@
+{
+  "name": "babel-plugin-transform-react-web",
+  "version": "1.0.0",
+  "description": "transform react-web ",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yzclostboy/babel-plugin-transform-react-web.git"
+  },
+  "keywords": [
+    "babel",
+    "react-web"
+  ],
+  "author": "victoryin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yzclostboy/babel-plugin-transform-react-web/issues"
+  },
+  "homepage": "https://github.com/yzclostboy/babel-plugin-transform-react-web#readme",
+  "dependencies": {
+    "babel-core": "^6.24.1",
+    "babel-generator": "^6.24.1",
+    "babel-types": "^6.24.1"
+  }
+}

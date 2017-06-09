@@ -21,8 +21,10 @@
   },
   "homepage": "https://github.com/yzclostboy/babel-plugin-transform-react-web#readme",
   "dependencies": {
+    "autoprefixer": "^7.1.1",
     "babel-core": "^6.24.1",
     "babel-generator": "^6.24.1",
-    "babel-types": "^6.24.1"
+    "babel-types": "^6.24.1",
+    "postcss": "^6.0.1"
   }
 }
